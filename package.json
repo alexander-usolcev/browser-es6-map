@@ -1,6 +1,6 @@
 {
   "name": "browser-es6-map",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple implementation of new Map() from es6 in browser",
   "author": "Alexander Usolcev <alexander.usolcev@gmail.com>",
   "repository": {
