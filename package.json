@@ -5,7 +5,7 @@
   "author": "Alexander Usolcev <alexander.usolcev@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexander-usolcev/browser-es6-map"
+    "url": "git+https://github.com/alexander-usolcev/browser-es6-map.git"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
@@ -19,5 +19,19 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "prod": "webpack --profile --display-modules --display-reasons"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/alexander-usolcev/browser-es6-map/issues"
+  },
+  "homepage": "https://github.com/alexander-usolcev/browser-es6-map#readme",
+  "main": "source/cache.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "keywords": [
+    "cache",
+    "new Map()"
+  ],
+  "license": "MIT"
 }

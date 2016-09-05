@@ -6,14 +6,14 @@ const path = require('path');
 
 
 module.exports = {
-    context: path.join(__dirname, "source"),
+    context: path.join(__dirname, "test"),
 
     entry: {
-        'cache': ['./cache']
+        'my-bundle': ['./my-file']
     },
 
     output: {
-        path: path.join(__dirname, "build"),
+        path: path.join(__dirname, "test"),
         filename: '[name].min.js'
     },
 
@@ -52,7 +52,7 @@ if (NODE_ENV == 'production') {
             compress: {
                 // don't show unreachable variables etc
                 warnings:     false,
-                drop_console: true
+                // drop_console: true
                 //unused:       false
                 //unsafe:       true
 

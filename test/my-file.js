@@ -1,4 +1,4 @@
-import Cache from 'browser-es6-map';
+import Cache from '../source/cache';
 
 
 function test() {
