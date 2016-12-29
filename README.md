@@ -1,11 +1,21 @@
 # browser-es6-map
 
 **browser-es6-map** - it's simple implementation of [new Map()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map) from es6 in browser.
-Only with the exception - the key can only be a string.
+But there is one exception - the key can only be a string.
 
-For build you can use [Webpack](https://webpack.github.io/) or something like it.
+For building you can use [Webpack](https://webpack.github.io/) or something like it.
 
-Create you es6 file:
+## Why?
+We can't use the original **new Map()** in our files, because the **new Map()** now (July 2016) is not supported in the browser.
+
+## Install 
+```
+npm install browser-es6-map --save-dev
+```
+
+## Use
+
+Create your es6 file:
 ``` js
 // my-file.js
 
@@ -39,7 +49,7 @@ export default test();
 
 and then build it with webpack.
 
-Add to html page and open console tab in devtools:
+Add to html page you generated script and open console tab in devtools:
 ``` html
 <script src='my-bundle.js'></script>
 ```
@@ -51,6 +61,3 @@ true
 'another test string data to array'
 '2'
 ```
-
-
-We can't use original **new Map()** in own files, because the **new Map()** in July 2016 is not supported in the browser.
